@@ -1,6 +1,5 @@
 import 'package:attend_event/features/auth/student_auth/presentation/pages/role_selection.dart';
 import 'package:attend_event/features/auth/student_auth/presentation/pages/splash_pages.dart';
-import 'package:attend_event/features/auth/student_auth/presentation/pages/student_homepage.dart';
 import 'package:attend_event/features/auth/student_auth/presentation/pages/student_login.dart';
 import 'package:attend_event/features/auth/student_auth/presentation/pages/student_register.dart';
 import 'package:attend_event/features/auth/teacher_auth/presentation/pages/teacher_login_page.dart';
@@ -11,8 +10,6 @@ class AppRoutes {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => const RoleSelection());
-      case '/studenthome':
-        return MaterialPageRoute(builder: (_) => const StudentHomepage());
       case '/studentregister':
         return MaterialPageRoute(builder: (_) => const StudentRegister());
       case '/studentlogin':

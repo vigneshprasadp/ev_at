@@ -1,6 +1,7 @@
 import 'package:attend_event/features/auth/student_auth/presentation/components/auth_student_button.dart';
 import 'package:attend_event/features/auth/student_auth/presentation/components/auth_student_field.dart';
 import 'package:attend_event/features/auth/student_auth/presentation/cubit/student_auth_cubit.dart';
+import 'package:attend_event/features/auth/student_auth/presentation/pages/student_homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -29,7 +30,7 @@ class _StudentLoginState extends State<StudentLogin> {
     return BlocConsumer<StudentAuthCubit, StudentAuthState>(
       listener: (context, state) {
         if (state is StudentAuthSuccess) {
-          Navigator.pushReplacementNamed(context, '/studenthome');
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>StudentHomepage(student: state.student)));
         } else if (state is StudentAuthError) {
           ScaffoldMessenger.of(
             context,

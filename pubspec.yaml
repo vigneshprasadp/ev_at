@@ -39,6 +39,9 @@ dependencies:
   get_it: ^8.2.0
   fpdart: ^1.1.1
   uuid: ^4.5.1
+  equatable: ^2.0.7
+  date_format: ^2.0.9
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:

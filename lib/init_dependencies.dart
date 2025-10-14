@@ -80,3 +80,4 @@ void _teacherauth() {
     () => TeacherAuthCubit(teacherSignInCase: servicelocator()),
   );
 }
+
